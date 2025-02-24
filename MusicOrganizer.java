@@ -79,8 +79,12 @@ public class MusicOrganizer
      */
     public void shuffleLibrary()
     {
-        ArrayList<Track> remainingTracks = new ArrayList<>(); //Creates a copy of ArrayList
+        ArrayList<Track> remainingTracks = new ArrayList<>(tracks); //Creates a copy of ArrayList
         Collections.shuffle(remainingTracks);
+        for (Track t : remainingTracks)
+        {
+            player.playSample(t.getFilename());
+        }
     }
     
     
