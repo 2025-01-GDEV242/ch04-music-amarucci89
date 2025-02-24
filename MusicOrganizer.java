@@ -62,15 +62,16 @@ public class MusicOrganizer
         }
     }
     
-    /**
-     * Play a random track in the collection.
+    /** Exercise 4.43
+     *  Play a random track in the collection.
      */
     public void playRandomTrack()
     {
         Random randomTrack;
         randomTrack = new Random();
-        int rand_int = randomTrack.nextInt();
-        System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
+        int randomIndex = randomTrack.nextInt(tracks.size());
+        //player.playSample(track.getFilename());
+        //System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
     }
     
     /**
