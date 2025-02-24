@@ -63,6 +63,17 @@ public class MusicOrganizer
     }
     
     /**
+     * Play a random track in the collection.
+     */
+    public void playRandomTrack()
+    {
+        Random randomTrack;
+        randomTrack = new Random();
+        int rand_int = randomTrack.nextInt();
+        System.out.println("Now playing: " + track.getArtist() + " - " + track.getTitle());
+    }
+    
+    /**
      * Return the number of tracks in the collection.
      * @return The number of tracks in the collection.
      */
