@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Collections;
 
 /** Lab 4 - Music Organizer
  * A class to hold details of audio tracks.
@@ -72,6 +73,16 @@ public class MusicOrganizer
         int index = rand.nextInt(tracks.size());
         playTrack(index);
     }
+    
+    /** Exercise 4.45
+     *  Shuffle through entire music library once.
+     */
+    public void shuffleLibrary()
+    {
+        ArrayList<Track> remainingTracks = new ArrayList<>(); //Creates a copy of ArrayList
+        Collections.shuffle(remainingTracks);
+    }
+    
     
     /**
      * Return the number of tracks in the collection.
