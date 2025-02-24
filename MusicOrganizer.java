@@ -1,11 +1,12 @@
 import java.util.ArrayList;
 
-/**
+/** Lab 4 - Music Organizer
  * A class to hold details of audio tracks.
  * Individual tracks may be played.
+ * Includes a shuffle/random feature.
  * 
- * @author David J. Barnes and Michael Kölling
- * @version 2016.02.29
+ * @author Alessandro Marucci
+ * @version 2025.02.23
  */
 public class MusicOrganizer
 {
