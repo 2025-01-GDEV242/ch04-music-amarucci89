@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 /** Lab 4 - Music Organizer
  * A class to hold details of audio tracks.
